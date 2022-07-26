@@ -1,3 +1,1 @@
-import BlockChainService from "./blockChainService";
-
-export { BlockChainService };
+export { default as BlockChainService } from "./blockChainService";

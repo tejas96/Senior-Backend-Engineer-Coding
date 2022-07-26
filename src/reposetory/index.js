@@ -1,2 +1,1 @@
-import transactions from "./transactions";
-export { transactions };
+export * as transactions from "./transactions";
