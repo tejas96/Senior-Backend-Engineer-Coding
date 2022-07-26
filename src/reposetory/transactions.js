@@ -1,4 +1,4 @@
-const Admin = require("../config/firebase");
+import Admin from "../config/firebase";
 
 const SaveBlockTransactions = async (blockNumber, transactions = []) => {
   console.log(blockNumber);
@@ -14,5 +14,4 @@ const SaveBlockTransactions = async (blockNumber, transactions = []) => {
   }
   await worker.commit();
 };
-
-module.exports = { SaveBlockTransactions };
+export { SaveBlockTransactions };

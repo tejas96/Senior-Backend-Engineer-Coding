@@ -1,10 +1,9 @@
-const { BlockChainService } = require("../service");
-const { transactions } = require("../reposetory");
+import { BlockChainService } from "../service";
+import { transactions } from "../reposetory";
 
 const blockChainService = new BlockChainService();
 
-const retrieveTransactions = async (req, res) => {
-  // const queue = new Queue("block transaction process queue");
+export const retrieveTransactions = async (req, res) => {
   const latestBlockNumber = await blockChainService.getLatestBlockNumber();
   let i = 1;
   while (i <= 10000) {
@@ -16,5 +15,3 @@ const retrieveTransactions = async (req, res) => {
   }
   res.send("done");
 };
-
-module.exports = { retrieveTransactions };

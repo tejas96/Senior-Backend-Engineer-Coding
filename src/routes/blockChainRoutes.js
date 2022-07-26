@@ -1,6 +1,6 @@
-const express = require("express");
-const { blockChainController } = require("../controller");
-const route = express.Router();
+import { Router } from "express";
+import { blockChainController } from "../controller";
+const route = Router();
 
 route.get("/ping", (req, res) => {
   res.send("pong");
@@ -8,4 +8,4 @@ route.get("/ping", (req, res) => {
 
 route.get("/retrieveTransactions", blockChainController.retrieveTransactions);
 
-module.exports = route;
+export default route;

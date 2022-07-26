@@ -1,3 +1,3 @@
-const BlockChainService = require("./blockChainService");
+import BlockChainService from "./blockChainService";
 
-module.exports = { BlockChainService };
+export { BlockChainService };

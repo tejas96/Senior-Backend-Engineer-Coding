@@ -1,3 +1,1 @@
-const blockChainController = require("./blockChainRouteController");
-
-module.exports = { blockChainController };
+export * as blockChainController from "./blockChainRouteController";

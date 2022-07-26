@@ -1,4 +1,4 @@
-const Web3 = require("web3");
+import Web3 from "web3";
 
 let connection = null;
 
@@ -27,4 +27,4 @@ class BlockChainService {
   }
 }
 
-module.exports = BlockChainService;
+export default BlockChainService;

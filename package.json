@@ -4,21 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon --exec node_modules/.bin/babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bee-queue": "^1.4.0",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "firebase-admin": "^11.0.0",
-    "web3": "^1.7.4",
-    "workerpool": "^6.2.1"
+    "web3": "^1.7.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/node": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
     "nodemon": "^2.0.19"
   }
 }
